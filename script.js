@@ -94,6 +94,7 @@ function filterTables() {
 // Handle pagination
 function setupPagination() {
     document.getElementById("prevEmployer").addEventListener("click", () => {
+        document.getElementById("search").value = "";
         console.log(`prevemployer called`);
         if (employerPage > 1) {
             employerPage--;
@@ -102,6 +103,7 @@ function setupPagination() {
     });
 
     document.getElementById("nextEmployer").addEventListener("click", () => {
+        document.getElementById("search").value = "";
         if (employerPage < Math.ceil(employers.length / itemsPerPage)) {
             console.log(`nextemployer called`);
             employerPage++;
@@ -110,6 +112,7 @@ function setupPagination() {
     });
 
     document.getElementById("prevJob").addEventListener("click", () => {
+        document.getElementById("search").value = "";
         console.log(`prevJob called`);
         if (jobPage > 1) {
             jobPage--;
@@ -118,6 +121,7 @@ function setupPagination() {
     });
 
     document.getElementById("nextJob").addEventListener("click", () => {
+        document.getElementById("search").value = "";
         console.log(`nextJob called`);
         if (jobPage < Math.ceil(jobTitles.length / itemsPerPage)) {
             jobPage++;

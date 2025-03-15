@@ -92,3 +92,75 @@ footer {
     font-weight: bold;
     margin: 0 10px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4a5568;
+    color: white;
+    text-align: left;
+}
+
+th {
+    padding: 12px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #999999;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
