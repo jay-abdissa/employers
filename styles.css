@@ -66,3 +66,29 @@ footer {
     bottom: 0;
     left: 0;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    background-color: #4a5568;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-weight: bold;
+    margin: 0 10px;
+}

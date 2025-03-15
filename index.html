@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRNCY EMPLOYERS & TITLES</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -15,7 +16,45 @@
     </nav>
 
     <main>
-        <p>This is empty!</p>
+        <div class="container">
+            <h2>Employers & Job Titles</h2>
+        
+            <input type="text" id="search" placeholder="Search This Current Page" onkeyup="filterTables()">
+        <section>
+            <h3>Employers</h3>
+            <table id="employersTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ITEM</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="pagination">
+                <button id="prevEmployer">Back</button>
+                <span id="pageEmployer"></span>
+                <button id="nextEmployer">Next</button>
+            </div>
+        </section>
+        <section>
+            <h3>Job Titles</h3>
+            <table id="jobTitlesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ITEM</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="pagination">
+                <button id="prevJob">Back</button>
+                <span id="pageJobs"></span>
+                <button id="nextJob">Next</button>
+            </div>
+        </section>
+        </div>
     </main>
 
     <footer>
